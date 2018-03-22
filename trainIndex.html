@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedules</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">  -->
+    <link rel = "stylesheet" type = "text/css" href = "assets/style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class = "container">
+
+    <div class="jumbotron">
+        <h1 class="title">Riding the train?</h1>
+        <p class="first-line"><strong>Check out this schedule!</strong></p>
+        <hr class="my-4">
+        <p class= "second-line"><strong>Find your train in real time</strong></p>
+        <img src = "http://www.vancitymommyd.com/wp-content/uploads/2018/01/clipart-train-train-free-to-use-clip-art-clipartix-science-clipart.png" alt="Train" height="150" width="300">
+        <hr>
+    </div>
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
+      </div>
+      <div class="panel-body">
+    <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Train Name</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Frequency(min)</th>
+                <th scope="col">Next Arrival</th>
+                <th scope="col">Minutes Away</th>
+              </tr>
+            </thead>
+
+            <tbody id = "trainTable">
+
+              <tr>
+                <td>Trenton Express</td>
+                <td>Trenton</td>
+                <td>25</td>
+                <td>17:35</td>
+                <td>10</td>   
+              </tr>
+
+              <tr>
+                <td>Oregon Trail</td>
+                <td>Salem, OR</td>
+                 <td>3600</td>
+                <td>13:39</td>
+                <td>1154</td> 
+              </tr>
+
+              <tr>
+                <td>Midnight Carriage</td>
+                <td>Philadelphia</td>
+                <td>15</td>
+                <td>17:35</td>
+                <td>28</td>
+              </tr>
+
+              <tr>
+                <td>Boston Bus</td>
+                <td>Boston</td>
+                <td>65</td>
+                <td>17:50</td>
+                <td>25</td> 
+              </tr>
+
+            </tbody>
+          </table>
+
+          <br>
+          <br>
+
+          <div class="panel panel-secondary">
+            <div class="panel-heading">
+              <h3 class="panel-titleTwo"><strong>Your Train</strong></h3>
+            </div>
+            <div class="panel-body">
+          <form>
+                <div class="form-group">
+                  <label for="exampleInputTrainName">Enter Your Train Name</label>
+                  <br>
+                  <input type="trainName" class="form-control" id="exampleInputtrainName" aria-describedby="trainNameHelp">
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleInputDestination">Destination</label>
+                  <br>
+                  <input type="Destination" class="form-control" id="exampleInputDestination" aria-describedby="DestinationHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputTrainTime">First Train Time(HH:mm-military)</label>
+                    <br>
+                    <input type="trainTime" class="form-control" id="exampleInputtrainTime" aria-describedby="trainTimeHelp">
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFrequency">Frequency(min)</label>
+                    <br>
+                    <input type="Frequency" class="form-control" id="exampleInputFrequency"aria-describedby="FrequencyHelp">
+                </div>
+                
+
+                <button type="submit" class="btn btn-primary" id="addTrainBtn">Submit</button>
+            
+              </form>
+
+              </div>
+
+
+    
+</div>
+<script src= "assets/javascript/app.js"></script>
+</body>
+
+
+</html>

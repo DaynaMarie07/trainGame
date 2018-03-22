@@ -1,0 +1,50 @@
+.title {
+    text-align: center;
+    color: rgb(224, 54, 148);
+    font-size: 60px;
+    background-image: url("https://www.wallpapersbrowse.com/images/rb/rb89ynx.gif");
+   
+}
+
+.first-line {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+.second-line {
+    color: darkgreen;
+    font-size: 20px;
+}
+
+.table-striped {
+    border-collapse: collapse;
+    width: 100%;
+    }
+    
+th, td {
+    text-align: left;
+    padding: 8px;
+    }
+    
+tr:nth-child(even) {background-color: #f2f2f2;
+    width: 100%; 
+}
+
+.form-control {
+    padding-right: 400px;
+    padding-bottom: 10px;
+
+}
+
+img {
+    padding-left: 400px;
+}
+
+.panel-title {
+    background-color: aqua;
+}
+
+.panel-titleTwo{
+    background-color: aqua;  
+}
